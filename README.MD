@@ -1,6 +1,5 @@
 http://www.wenzhixin.net.cn/2014/03/20/cordova_my_plugin
 
-
 plugin.xml
 有几个关键的字段需要解释下：
 
