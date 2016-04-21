@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin id="com.zhanglou.lxd.ExtraInfo" version="0.1.2"
+        xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>ExtraInfo</name>
+    <description>Description</description>
+    <js-module name="ExtraInfo" src="www/ExtraInfo.js">
+        <clobbers target="cordova.plugins.ExtraInfo"/>
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="ExtraInfo">
+                <!-- 对应将来要调用的ExtraInfo.java被下面的source-file的java文件路径 -->
+                <param name="android-package" value="com.zhanglou.cordovaPlugins.ExtraInfo"/>
+            </feature>
+        </config-file>
+        <source-file src="src/android/ExtraInfo.java" target-dir="src/com/zhanglou/cordovaPlugins/extraInfo"/>
+    </platform>
+</plugin>
